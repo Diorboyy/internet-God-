@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-gold: #D4A017;
+  --color-gold-light: #F2C744;
+  --color-gold-dark: #B5840E;
+  --color-charcoal: #171717;
+  --color-charcoal-card: #1F1F1F;
+  --color-charcoal-deep: #0D0D0D;
+  --color-warm-white: #FAF9F6;
+  --color-bronze: #76512D;
+  --color-soft-gray: #EAE7E2;
+}
+
+/* Custom luxury scrollbar & base styles */
+html {
+  font-family: var(--font-sans);
+  background-color: var(--color-warm-white);
+  color: var(--color-charcoal);
+}
+
+::selection {
+  background-color: rgba(212, 160, 23, 0.25);
+  color: #171717;
+}
+
+/* Smooth focus rings */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 2px solid #D4A017;
+  outline-offset: 2px;
+}
